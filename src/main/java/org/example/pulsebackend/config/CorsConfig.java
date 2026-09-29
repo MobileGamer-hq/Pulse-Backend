@@ -14,7 +14,7 @@ public class CorsConfig {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/**") // Allow all endpoints
-                        .allowedOrigins("http://localhost:5173", "http://localhost:5174", "https://pulse-epicordia.web.app") // Add your frontend URLs here
+                        .allowedOrigins("http://localhost:5173", "http://localhost:5174", "https://pulse-epicordia.web.app", "https://pulse.epicordia.com") // Add your frontend URLs here
                         .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                         .allowedHeaders("Content-Type", "Authorization")
                         .allowCredentials(true);
